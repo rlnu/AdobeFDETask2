@@ -318,10 +318,10 @@ async function overlayMessage(imagePath, message, aspect, outputPath, dropboxDes
       for (const aspect of Object.keys(ASPECT_RATIOS)) {
         const aspectDir = path.join(productDir, aspect);
         await fs.ensureDir(aspectDir);
-        const outPath = path.join(aspectDir, 'creative.png');
+        const outPath = path.join(aspectDir, product.name+"_"+aspect+'_creative.png');
 
         // Dropbox destination path (e.g., /output/ProductName/aspect/creative.png)
-        const dropboxDestPath = `/${path.basename(argv.output)}/${product.name.replace(/\s+/g, '_')}/${aspect}/creative.png`;
+        const dropboxDestPath = `/${path.basename(argv.output)}/${product.name.replace(/\s+/g, '_')}/${aspect}/${product.name}_${aspect}_creative.png`;
 
         await overlayMessage(assetPath, campaignMsg, aspect, outPath, dropboxDestPath, dbx);
         console.log(`Saved locally: ${outPath} and uploaded to Dropbox: ${dropboxDestPath}`);
