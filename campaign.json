@@ -1,0 +1,11 @@
+
+  {
+   "products": [
+     { "name": "Coffee", "description": "Coffee mug in the backdrop of crisp autumn landscape with colorful trees" },
+     { "name": "Candle", "description": "A candle in the backdrop of colorful autumn trees" },
+     { "name": "Jacket", "description": "A stylish denim jacket, perfectly centered, hanging on an old wooden fence. The background is a vibrant, sunlit autumn forest with golden, red, and orange leaves." }
+   ],
+   "target_region": "US",
+   "target_audience": "Active adults 18-50",
+   "campaign_message": "Your cozy fall ritual starts here."
+  }
